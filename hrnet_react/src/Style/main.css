@@ -1,0 +1,36 @@
+.formik-form{
+    width: 100%;
+    text-align: center;
+}
+
+.error-message{
+    color: red;
+    font-weight: 500;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.datepicker{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.react-datepicker-wrapper {
+    display: block; /* ou flex, selon la mise en page souhaitée */
+    width: 100%; /* ou une largeur spécifique */
+  }
+  
+  .react-datepicker {
+    font-family: Arial, sans-serif;
+  }
+  
+  .react-datepicker__input-container {
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+  
