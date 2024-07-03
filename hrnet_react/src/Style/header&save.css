@@ -1,0 +1,66 @@
+.app_header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title_header{
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    margin: 0;
+}
+
+p{
+    text-align: center;
+    font-size: large;
+    margin: 0;
+}
+
+.b-space{
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+.sb-space{
+    width: 80%;
+}
+
+.title-employee{
+    text-align: center;
+}
+
+select{
+    width: 50px;
+}
+
+.space{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-space{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.input-space-employee{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.array-space{
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+}
+
+.date{
+    width: 140px;
+}

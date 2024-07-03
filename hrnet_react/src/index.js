@@ -1,19 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Header from './Components/Header.js';
-import {FormikForm} from './Components/DataName.js';
-import DateOfBirthPicker from './Components/DataBirth.js'
-import AddAddress from './Components/DataAdress.js';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals'; 
+import { Provider } from 'react-redux';
+import  store  from './Redux/store.js';
+import Formulaire from './Page/Formulaire.js';
+import ValidateResult from './Page/ValidateResult.js';
+import { BrowserRouter as Router, Route , Routes} from 'react-router-dom';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
-    <FormikForm />
-    <DateOfBirthPicker />
-    <AddAddress />
+      <Provider store={store}>
+      <Router>
+                <Routes>
+                    <Route path="/" element={<Formulaire />}>
+                    </Route>
+                    <Route path="/ValidateResult" element={<ValidateResult />}>   
+                    </Route>
+                </Routes>
+            </Router>
+      </Provider>
   </React.StrictMode>
 );
 
