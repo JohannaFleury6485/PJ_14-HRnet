@@ -221,7 +221,7 @@ function Formulaire() {
                 <label>Date of Birth</label>
                 <input 
                     type="date"
-                    className='input-space date'
+                    className='input-element date'
                     onChange={handleDateDoB}
                     value={formData.dateOfBirth}
                     name="Date of Birth"
@@ -235,7 +235,7 @@ function Formulaire() {
                 <input
                     type='date'
                     name="dateStart"
-                    className='input-space date'
+                    className='input-element date'
                     onChange={handleDate}
                     value={formData.dateStart}
                     min="1950-01-01"
