@@ -2,8 +2,7 @@ import { useState} from "react";
 import Header from "../Components/Header.js";
 import "../Style/main.css";
 import states from '../data.json';
-import 'react-datepicker/dist/react-datepicker.css';
-import { useDispatch, } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addUser } from "../Redux/reducers.js";
 import { Badge } from 'test-jovanna';
 import { Link } from "react-router-dom";
@@ -74,7 +73,7 @@ function Formulaire() {
         }
     };
 
-    const handleDate = (event) => { // retour un objet Event.
+    const handleDate = (event) => {
         const date = event.target.value;
 
         if (!date) {
